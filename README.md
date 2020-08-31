@@ -1,3 +1,6 @@
-# hnt-profile
-- This is a Static web design about me
-- It's used HTML, CSS, JS
+# Static Web Design
+- A web about my profile.
+- HTML, CSS, JS, Bootstrap Grid.
+
+## Link to view
+- [MyCV](https://hnt-profile.web.app/)
