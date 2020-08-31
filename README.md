@@ -1,6 +1,8 @@
 # Static Web Design
 - A web about my profile.
-- HTML, CSS, JS, Bootstrap Grid.
+- I used HTML, CSS, JS, Bootstrap grid.
 
 ## Link to view
 - [MyCV](https://hnt-profile.web.app/)
+
+### Updating...
