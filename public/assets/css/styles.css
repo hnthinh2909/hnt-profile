@@ -88,6 +88,8 @@ body {
     width: 80%;
 }
 
+
+
 /* main */
 
 .main {
@@ -132,6 +134,7 @@ body {
 .link-cv {
     margin-top: 2rem;
 }
+
 
 .btn {
     border-radius: 4px;
@@ -270,7 +273,7 @@ time {
 }
 
 .timeline ul li:nth-child(even) time {
-    text-align: right;
+    text-align: left;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -337,7 +340,6 @@ time {
 .title {
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 3rem;
 }
 
 .main__portfolio--list {

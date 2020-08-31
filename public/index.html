@@ -4,9 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+        integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <style>
+
+    </style>
+
     <title>Thinh's Profile</title>
 </head>
 
@@ -23,7 +30,7 @@
             </nav>
         </header>
 
-        <div class="scroll-top">
+        <div class="scroll-top" style="z-index: 22;">
             <a href="#header"><img src="/assets/img/top.svg" alt="Up to top" class="icon-top"></a>
         </div>
 
@@ -45,12 +52,19 @@
 
                 </div>
             </div>
-            <div class="timeline layout-grid" id="timeline">
+
+            <div class="main__chartjs" width="400" height="400" style="margin-bottom: 10rem">
+                <h2 class="title">Skills</h2>
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div class=" timeline layout-grid" id="timeline">
                 <h3 class="title">Timeline</h3>
                 <ul>
                     <li>
                         <div>
-                            <time>08/2018</time> Become to a first year student of Hue University of Sciences with major
+                            <time>08/2018</time> Become to a first year student of Hue University of Sciences with
+                            major
                             is Information Technology.
                         </div>
                     </li>
@@ -98,6 +112,43 @@
             </div>
         </div>
 
+        <div class="main__portfolio layout-grid">
+            <h3 class="title" id="portfolio" style="margin-bottom: 0.5rem">Blog</h3>
+            <p class="sub-title" style="text-align: center; margin-bottom: 2rem; font-size: 1.3rem">My blog to share
+                something about code!
+            </p>
+            <div class="row">
+                <!-- main__portfolio--list  -->
+                <div class="hover ehover13 item-portfolio col-sm-4">
+                    <img class="img-responsive" src="/assets/img/stadium.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Stadium</h2>
+                        <a href="#" class="info nullbutton link-hover" data-toggle="modal" data-target="#modal13">Watch
+                            Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="hover ehover13 item-portfolio col-sm-4">
+                    <img class="img-responsive" src="/assets/img/stadium.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Stadium</h2>
+                        <a href="#" class="info nullbutton link-hover" data-toggle="modal" data-target="#modal13">Watch
+                            Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="hover ehover13 item-portfolio col-sm-4">
+                    <img class="img-responsive" src="/assets/img/stadium.jpg" alt="">
+                    <div class="overlay">
+                        <h2>Stadium</h2>
+                        <a href="#" class="info nullbutton link-hover" data-toggle="modal" data-target="#modal13">Watch
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <footer class="footer" id="contact">
 
             <div class="contact__left">
@@ -120,14 +171,14 @@
                 <p>If you want to know more about me? <br />
                     Click something below here</p>
                 <div class="icon">
-                    <a href="#" class="link-button"><img src="/assets/img/facebook.svg" alt="Facebook"
-                            class="icon-button"></a>
-                    <a href="#" class="link-button"><img src="/assets/img/in.svg" alt="Linkedin"
-                            class="icon-button"></a>
-                    <a href="#" class="link-button"><img src="/assets/img/twitter.svg" alt="Twitter"
-                            class="icon-button"></a>
-                    <a href="#" class="link-button"><img src="/assets/img/github.svg" alt="Github"
-                            class="icon-button"></a>
+                    <a href="https://www.facebook.com/ngocthinh.2909" class="link-button" target="_blank"><img
+                            src="/assets/img/facebook.svg" alt="Facebook" class="icon-button"></a>
+                    <a href="https://www.linkedin.com/in/ngocthinh2909/" class="link-button" target="_blank"><img
+                            src="/assets/img/in.svg" alt="Linkedin" class="icon-button"></a>
+                    <a href="https://twitter.com/ngocthinh2909" class="link-button" target="_blank"><img
+                            src="/assets/img/twitter.svg" alt="Twitter" class="icon-button"></a>
+                    <a href="https://github.com/hnthinh2909" class="link-button" target="_blank"><img
+                            src="/assets/img/github.svg" alt="Github" class="icon-button"></a>
                 </div>
             </div>
         </footer>
@@ -143,6 +194,45 @@
     <!-- Initialize Firebase -->
     <script src="/__/firebase/init.js"></script>
     <script src="/main.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['HTML', 'Javscript', 'CSS', 'Node.js', 'Express', 'PHP'],
+                datasets: [{
+                    label: 'My Skills',
+                    data: [60, 65, 55, 70, 70, 65, 100],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1,
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
