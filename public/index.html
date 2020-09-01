@@ -7,8 +7,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
         integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
     <style>
 
@@ -31,7 +31,7 @@
         </header>
 
         <div class="scroll-top" style="z-index: 22;">
-            <a href="#header"><img src="/assets/img/top.svg" alt="Up to top" class="icon-top"></a>
+            <a href="#header"><img src="./assets/img/top.svg" alt="Up to top" class="icon-top"></a>
         </div>
 
         <!-- main -->
@@ -46,8 +46,10 @@
                         future
                         is become to a Back-end Developer.</p>
                     <div class="link-cv">
-                        <a class="btn" href="#" target="_blank" rel="nofollow"><span>Watch CV</a>
-                        <a class="btn" href="#" target="_blank" rel="nofollow"><span>Download CV</a>
+                        <a class="btn" href="https://www.topcv.vn/xem-cv/97a198c62ddfa7d154cf75d80ae97c41"
+                            target="_blank" rel="nofollow"><span>Watch CV</a>
+                        <a class="btn" href="./assets/file/HUYNH-NGOC-THINH-TopCV.pdf" target="_blank" rel="nofollow"
+                            download><span>Download CV</a>
                     </div>
 
                 </div>
@@ -78,19 +80,22 @@
                 </ul>
             </div>
             <div class="main__portfolio layout-grid">
-                <h3 class="title" id="portfolio">Portfolio</h3>
+                <h3 class="title" id="portfolio" style="margin-bottom: 2rem">Portfolio</h3>
                 <div class="row">
+                    <div class="hover ehover13 item-portfolio col-sm-4"></div>
                     <!-- main__portfolio--list  -->
                     <div class="hover ehover13 item-portfolio col-sm-4">
                         <img class="img-responsive" src="/assets/img/stadium.jpg" alt="">
                         <div class="overlay">
-                            <h2>Stadium</h2>
-                            <a href="#" class="info nullbutton link-hover" data-toggle="modal"
-                                data-target="#modal13">Watch Demo
+                            <h2>App Order Stadium</h2>
+                            <a href="https://github.com/hnthinh2909/app-order-stadium" target="_blank"
+                                class="info nullbutton link-hover" data-toggle="modal" data-target="#modal13">Watch Demo
                             </a>
                         </div>
                     </div>
-                    <div class="hover ehover13 item-portfolio col-sm-4">
+
+                    <div class="hover ehover13 item-portfolio col-sm-4"></div>
+                    <!-- <div class="hover ehover13 item-portfolio col-sm-4">
                         <img class="img-responsive" src="/assets/img/stadium.jpg" alt="">
                         <div class="overlay">
                             <h2>Stadium</h2>
@@ -107,7 +112,7 @@
                                 data-target="#modal13">Watch Demo
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -120,15 +125,27 @@
             <div class="row">
                 <!-- main__portfolio--list  -->
                 <div class="hover ehover13 item-portfolio col-sm-4">
-                    <img class="img-responsive" src="/assets/img/stadium.jpg" alt="">
+                    <img class="img-responsive" src="./assets/img/classnames.png" alt="classNames">
                     <div class="overlay">
-                        <h2>Stadium</h2>
-                        <a href="#" class="info nullbutton link-hover" data-toggle="modal" data-target="#modal13">Watch
-                            Demo
+                        <h2>Using classNames</h2>
+                        <a href="https://www.notion.so/classnames-npm-390da22180884b34924709128f6d7de7" target="_blank"
+                            class="info nullbutton link-hover" data-toggle="modal" data-target="#modal13">Watch
+                            It
                         </a>
                     </div>
                 </div>
                 <div class="hover ehover13 item-portfolio col-sm-4">
+                    <img class="img-responsive" src="./assets/img/laravel-leader.png" alt="Laravel">
+                    <div class="overlay">
+                        <h2>Install and config Laravel</h2>
+                        <a href="https://www.notion.so/Install-Laravel-on-Ubuntu-72fbe77556474141be814827641b077f"
+                            target="_blank" class="info nullbutton link-hover" data-toggle="modal"
+                            data-target="#modal13">Watch
+                            It
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="hover ehover13 item-portfolio col-sm-4">
                     <img class="img-responsive" src="/assets/img/stadium.jpg" alt="">
                     <div class="overlay">
                         <h2>Stadium</h2>
@@ -136,16 +153,7 @@
                             Demo
                         </a>
                     </div>
-                </div>
-                <div class="hover ehover13 item-portfolio col-sm-4">
-                    <img class="img-responsive" src="/assets/img/stadium.jpg" alt="">
-                    <div class="overlay">
-                        <h2>Stadium</h2>
-                        <a href="#" class="info nullbutton link-hover" data-toggle="modal" data-target="#modal13">Watch
-                            Demo
-                        </a>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -202,7 +210,7 @@
                 labels: ['HTML', 'Javscript', 'CSS', 'Node.js', 'Express', 'PHP'],
                 datasets: [{
                     label: 'My Skills',
-                    data: [60, 65, 55, 70, 70, 65, 100],
+                    data: [60, 65, 55, 65, 65, 55, 100],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
